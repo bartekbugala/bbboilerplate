@@ -1,14 +1,14 @@
-import React/* , { useEffect, useState, useRef, createContext }  */from 'react';
+import React, { useEffect, useState, useRef, createContext } from 'react';
 /* import { Switch, Route, Redirect, useLocation } from 'react-router-dom'; */
 
 import axios from 'axios';
 
-export const SiteIdContext = createContext(null);
+export const AppContext = createContext(null);
 
 export default function Transformer() {
   
   return (
-    <SiteIdContext.Provider value={siteID}>
+    <AppContext.Provider value={null}>
       <main>
         <h1>BBBoilerplate</h1>
         <p>A custom React boilerplate</p>
@@ -22,6 +22,6 @@ export default function Transformer() {
           <li>Browser-Sync</li>
         </ul>
       </main>
-    </SiteIdContext.Provider>
+    </AppContext.Provider>
   );
 }

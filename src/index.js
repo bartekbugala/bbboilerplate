@@ -6,11 +6,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
 
-const rootDiv = document.getElementById('root')
+/* const rootDiv = document.getElementById('root') */
 
 render(
   <Router>
     <App />
   </Router>,
-  rootDiv.getElementById('root')
+  document.getElementById('root')
 );
